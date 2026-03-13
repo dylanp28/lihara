@@ -6,6 +6,8 @@ interface ProductPlaceholderProps {
   category: Category;
   size?: "sm" | "md" | "lg";
   className?: string;
+  src?: string;
+  alt?: string;
 }
 
 function CategoryComposition({ category }: { category: Category }) {
@@ -59,7 +61,19 @@ const sizes = {
   lg: "h-80 sm:h-96",
 };
 
-export function ProductPlaceholder({ gradient, category, size = "md", className }: ProductPlaceholderProps) {
+export function ProductPlaceholder({ gradient, category, size = "md", className, src, alt }: ProductPlaceholderProps) {
+  if (src) {
+    return (
+      <div className={cn("w-full relative overflow-hidden bg-accent/30", sizes[size], className)}>
+        <img
+          src={src}
+          alt={alt || ""}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(

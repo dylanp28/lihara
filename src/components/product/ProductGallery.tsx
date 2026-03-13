@@ -20,6 +20,8 @@ export function ProductGallery({ images, category }: ProductGalleryProps) {
           gradient={images[selected].gradient}
           category={category}
           size="lg"
+          src={images[selected].src}
+          alt={images[selected].alt}
         />
       </div>
 
@@ -33,7 +35,7 @@ export function ProductGallery({ images, category }: ProductGalleryProps) {
               selected === i ? "opacity-100" : "opacity-40 hover:opacity-70"
             )}
           >
-            <ProductPlaceholder gradient={image.gradient} category={category} size="sm" className="h-full" />
+            <ProductPlaceholder gradient={image.gradient} category={category} size="sm" src={image.src} alt={image.alt} className="h-full" />
           </button>
         ))}
       </div>

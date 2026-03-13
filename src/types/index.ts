@@ -4,6 +4,7 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
+  subtitle?: string;
   price: number;
   category: Category;
   description: string;
@@ -11,12 +12,15 @@ export interface Product {
   sizes?: string[];
   images: ProductImage[];
   featured: boolean;
+  line?: boolean;
+  availability?: string;
 }
 
 export interface ProductImage {
   id: string;
   gradient: string;
   alt: string;
+  src?: string;
 }
 
 export interface CartItem {

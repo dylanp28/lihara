@@ -46,3 +46,10 @@ export const CATEGORY_GRADIENTS: Record<string, string> = {
   bracelets: "from-rose-200 via-pink-100 to-amber-200",
   earrings: "from-violet-200 via-purple-100 to-slate-200",
 };
+
+export const CATEGORY_IMAGES: Record<string, string> = {
+  rings: "/images/products/rings-category.png",
+  necklaces: "/images/products/necklaces-category.png",
+  bracelets: "/images/products/bracelets-category.png",
+  earrings: "/images/products/earrings-category.png",
+};

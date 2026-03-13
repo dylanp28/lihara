@@ -21,6 +21,8 @@ export function ProductCard({ product }: ProductCardProps) {
             gradient={product.images[0].gradient}
             category={product.category}
             size="md"
+            src={product.images[0].src}
+            alt={product.images[0].alt}
             className="transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
           />
         </div>
@@ -31,7 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
               {product.name}
             </h3>
             <p className="text-[10px] text-charcoal/25 mt-1 uppercase tracking-[0.2em]">
-              {product.category}
+              {product.subtitle || product.category}
             </p>
           </div>
           <span className="text-[13px] text-charcoal/40 font-light flex-shrink-0">

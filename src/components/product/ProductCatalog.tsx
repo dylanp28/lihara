@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { ProductFilter } from "./ProductFilter";
 import { ProductGrid } from "./ProductGrid";
-import { products } from "@/data/products";
+import { getShopProducts } from "@/data/products";
 
 export function ProductCatalog() {
   const searchParams = useSearchParams();
@@ -13,12 +13,13 @@ export function ProductCatalog() {
     initialCategory
   );
 
+  const shopProducts = useMemo(() => getShopProducts(), []);
   const filtered = useMemo(
     () =>
       activeCategory
-        ? products.filter((p) => p.category === activeCategory)
-        : products,
-    [activeCategory]
+        ? shopProducts.filter((p) => p.category === activeCategory)
+        : shopProducts,
+    [activeCategory, shopProducts]
   );
 
   return (
