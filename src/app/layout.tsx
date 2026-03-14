@@ -6,6 +6,7 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CartDrawer } from "@/components/layout/CartDrawer";
+import { PasswordGate } from "@/components/layout/PasswordGate";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -45,13 +46,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${instrumentSerif.variable}`}>
       <body className="antialiased">
-        <CartProvider>
-          <AnnouncementBar />
-          <Header />
-          <main className="min-h-[60vh]">{children}</main>
-          <Footer />
-          <CartDrawer />
-        </CartProvider>
+        <PasswordGate>
+          <CartProvider>
+            <AnnouncementBar />
+            <Header />
+            <main className="min-h-[60vh]">{children}</main>
+            <Footer />
+            <CartDrawer />
+          </CartProvider>
+        </PasswordGate>
       </body>
     </html>
   );
