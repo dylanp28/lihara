@@ -1,5 +1,7 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
+import { ImageBand } from "@/components/home/ImageBand";
+import { LatestDrops } from "@/components/home/LatestDrops";
 import { CategoryShowcase } from "@/components/home/CategoryShowcase";
 import { BrandStory } from "@/components/home/BrandStory";
 import { Marquee } from "@/components/ui/Marquee";
@@ -12,7 +14,9 @@ export default function HomePage() {
       <HeroSection />
       <Marquee />
       <FeaturedProducts />
-      <ArtDecoDivider />
+      <ImageBand />
+      <LatestDrops />
+      <ImageBand className="mt-0 sm:mt-0" />
       <CategoryShowcase />
       <ArtDecoDivider />
       <BrandStory />

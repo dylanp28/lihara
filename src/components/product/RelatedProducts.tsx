@@ -11,7 +11,7 @@ export function RelatedProducts({ products }: RelatedProductsProps) {
   return (
     <section className="mt-24 pt-20">
       <div className="flex items-center gap-6 mb-12">
-        <span className="text-[11px] uppercase tracking-[0.35em] text-charcoal/30 font-body">
+        <span className="text-[13px] uppercase tracking-[0.35em] text-charcoal/30 font-body">
           You may also like
         </span>
         <div className="flex-1 h-px bg-accent/60" />

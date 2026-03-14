@@ -46,14 +46,14 @@ export default function LinePage({ params }: PageProps) {
 
           {/* Info */}
           <div className="flex flex-col justify-center px-8 sm:px-12 lg:px-20 py-16 lg:py-0">
-            <p className="text-cream/20 text-[10px] uppercase tracking-[0.5em] font-body">
+            <p className="text-cream/20 text-[12px] uppercase tracking-[0.5em] font-body">
               Line
             </p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-cream mt-4 leading-[0.9]">
               {line.name}
             </h1>
             {line.subtitle && (
-              <p className="text-cream/30 text-[11px] uppercase tracking-[0.25em] font-body mt-4">
+              <p className="text-cream/30 text-[13px] uppercase tracking-[0.25em] font-body mt-4">
                 {line.subtitle}
               </p>
             )}
@@ -76,7 +76,7 @@ export default function LinePage({ params }: PageProps) {
               {line.details.map((detail) => (
                 <li
                   key={detail}
-                  className="text-cream/20 text-[11px] font-light tracking-wide"
+                  className="text-cream/20 text-[13px] font-light tracking-wide"
                 >
                   {detail}
                 </li>
@@ -86,7 +86,7 @@ export default function LinePage({ params }: PageProps) {
             <div className="mt-12">
               <Link
                 href="/products"
-                className="group inline-flex items-center gap-3 text-cream/30 text-[10px] uppercase tracking-[0.25em] font-body hover:text-cream/60 transition-colors duration-500"
+                className="group inline-flex items-center gap-3 text-cream/30 text-[12px] uppercase tracking-[0.25em] font-body hover:text-cream/60 transition-colors duration-500"
               >
                 <svg
                   className="w-3.5 h-3.5 transform group-hover:-translate-x-1.5 transition-transform duration-500 rotate-180"

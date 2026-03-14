@@ -12,38 +12,49 @@ export function BrandStory() {
         {/* Editorial split — media left, text right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <AnimatedSection>
-            <MediaSlot
-              label="Process or lifestyle image — 800×1000"
-              ratio="aspect-[4/5]"
-              dark
-              className="w-full"
-            />
+            <div>
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img
+                  src="/images/brand-story.jpg"
+                  alt="A child sketching designs"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+              <p className="text-cream/25 text-[13px] font-light mt-3 tracking-wide">
+                Me at age 5
+              </p>
+            </div>
           </AnimatedSection>
 
           <AnimatedSection delay={0.15}>
             <p className="font-display italic text-display-lg text-cream/80 leading-[1.05]">
-              Where artistry meets
-              <span className="text-cream"> accessibility.</span>
+              Every child is
+              <span className="text-cream"> an artist.</span>
             </p>
 
-            <p className="text-cream/35 font-light leading-[1.8] text-[13px] mt-10">
-              We believe the creative community deserves jewelry that speaks
-              their language — pieces informed by architecture, sculpture, and
-              the principles of modern design. Every LIHARA piece begins as a
-              sketch, refined through prototyping until only the essential form
-              remains.
+            <p className="text-cream/35 font-light leading-[1.9] text-[15px] sm:text-[16px] mt-10">
+              Somewhere along the way, we stopped dreaming out loud. The ideas
+              that once came without hesitation, bold, unfiltered, maybe a
+              little crazy, got traded for safe choices and quiet conformity.
+              LIHARA exists to reignite that spark. To remind you that the kid
+              who drew outside the lines didn't disappear.
             </p>
 
-            <p className="text-cream/35 font-light leading-[1.8] text-[13px] mt-6">
-              Crafted from 316L stainless steel — the same grade used in
-              surgical instruments. Hypoallergenic, water-resistant, and built
-              to last. Each piece is finished by hand in brushed, polished, or
-              matte textures.
+            <p className="text-cream/35 font-light leading-[1.9] text-[15px] sm:text-[16px] mt-6">
+              Crafted from 316L surgical-grade stainless steel. Hypoallergenic,
+              water resistant, built to last.
+            </p>
+
+            <p className="font-display italic text-xl sm:text-2xl text-cream/50 leading-[1.3] mt-10">
+              &ldquo;The problem is how to remain one once we grow up.&rdquo;
+            </p>
+            <p className="text-cream/25 text-[13px] mt-3 tracking-wide">
+              &mdash; Pablo Picasso
             </p>
 
             <Link
               href="/about"
-              className="group inline-flex items-center gap-3 text-cream/40 text-[10px] uppercase tracking-[0.3em] hover:text-cream/70 transition-colors duration-500 mt-10"
+              className="group inline-flex items-center gap-3 text-cream/40 text-[14px] uppercase tracking-[0.3em] hover:text-cream/70 transition-colors duration-500 mt-10"
             >
               <span>Our story</span>
               <svg
@@ -87,7 +98,7 @@ export function BrandStory() {
               <h4 className="text-cream/50 font-display italic text-lg mt-5 mb-2">
                 {item.title}
               </h4>
-              <p className="text-cream/25 text-[12px] font-light leading-[1.8]">
+              <p className="text-cream/25 text-[14px] font-light leading-[1.8]">
                 {item.desc}
               </p>
             </AnimatedSection>

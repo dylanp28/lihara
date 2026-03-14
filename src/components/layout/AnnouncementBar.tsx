@@ -8,7 +8,7 @@ export function AnnouncementBar() {
   if (dismissed) return null;
 
   return (
-    <div className="bg-charcoal text-cream/40 text-center text-[9px] uppercase tracking-[0.4em] py-2.5 px-8 relative font-body">
+    <div className="bg-charcoal text-cream/40 text-center text-[11px] uppercase tracking-[0.4em] py-2.5 px-8 relative font-body">
       <p>Complimentary shipping on orders over $75</p>
       <button
         onClick={() => setDismissed(true)}

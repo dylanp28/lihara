@@ -12,7 +12,7 @@ export function SizeSelector({ sizes, selected, onSelect }: SizeSelectorProps) {
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <span className="text-[11px] uppercase tracking-[0.25em] text-charcoal/35">Size</span>
+        <span className="text-[13px] uppercase tracking-[0.25em] text-charcoal/35">Size</span>
         {selected && <span className="text-xs text-charcoal/40">{selected}</span>}
       </div>
       <div className="flex flex-wrap gap-2">

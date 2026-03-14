@@ -57,7 +57,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               ))}
             </div>
             <div className="px-6 pb-8">
-              <p className="text-[10px] text-charcoal/25 tracking-wider italic font-display">
+              <p className="text-[12px] text-charcoal/25 tracking-wider italic font-display">
                 Where creativity finds form
               </p>
             </div>

@@ -18,7 +18,7 @@ export function ProductInfo({ product }: ProductInfoProps) {
   return (
     <div className="space-y-8">
       <div>
-        <p className="text-[11px] uppercase tracking-[0.25em] text-charcoal/35 mb-3">
+        <p className="text-[13px] uppercase tracking-[0.25em] text-charcoal/35 mb-3">
           {product.category}
         </p>
         <h1 className="font-display text-3xl sm:text-4xl text-charcoal leading-[1.1]">
@@ -47,7 +47,7 @@ export function ProductInfo({ product }: ProductInfoProps) {
       </Button>
 
       <div className="pt-8">
-        <h3 className="text-[11px] uppercase tracking-[0.25em] text-charcoal/35 mb-4">Details</h3>
+        <h3 className="text-[13px] uppercase tracking-[0.25em] text-charcoal/35 mb-4">Details</h3>
         <ul className="space-y-2.5">
           {product.details.map((detail, i) => (
             <li key={i} className="text-sm text-charcoal/50 font-light">

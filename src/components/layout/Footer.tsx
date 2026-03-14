@@ -19,7 +19,7 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-2">
-              <h3 className="text-[10px] uppercase tracking-[0.3em] text-cream/20 mb-5">Shop</h3>
+              <h3 className="text-[12px] uppercase tracking-[0.3em] text-cream/20 mb-5">Shop</h3>
               <ul className="space-y-3">
                 {FOOTER_NAV.shop.map((link) => (
                   <li key={link.href}>
@@ -32,7 +32,7 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-2">
-              <h3 className="text-[10px] uppercase tracking-[0.3em] text-cream/20 mb-5">Help</h3>
+              <h3 className="text-[12px] uppercase tracking-[0.3em] text-cream/20 mb-5">Help</h3>
               <ul className="space-y-3">
                 {FOOTER_NAV.help.map((link) => (
                   <li key={link.href}>
@@ -45,7 +45,7 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-2">
-              <h3 className="text-[10px] uppercase tracking-[0.3em] text-cream/20 mb-5">About</h3>
+              <h3 className="text-[12px] uppercase tracking-[0.3em] text-cream/20 mb-5">About</h3>
               <ul className="space-y-3">
                 {FOOTER_NAV.about.map((link) => (
                   <li key={link.href}>
@@ -58,7 +58,7 @@ export function Footer() {
             </div>
 
             <div className="lg:col-span-2">
-              <h3 className="text-[10px] uppercase tracking-[0.3em] text-cream/20 mb-5">Connect</h3>
+              <h3 className="text-[12px] uppercase tracking-[0.3em] text-cream/20 mb-5">Connect</h3>
               <a href="mailto:hello@lihara.com" className="text-[13px] text-cream/40 hover:text-cream/70 transition-colors duration-500 font-light">
                 hello@lihara.com
               </a>
@@ -66,10 +66,10 @@ export function Footer() {
           </div>
 
           <div className="border-t border-cream/[0.06] py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[10px] text-cream/15 tracking-wider">
+            <p className="text-[12px] text-cream/15 tracking-wider">
               &copy; {new Date().getFullYear()} LIHARA
             </p>
-            <p className="text-[10px] text-cream/15 tracking-wider italic font-display">
+            <p className="text-[12px] text-cream/15 tracking-wider italic font-display">
               Where creativity finds form
             </p>
           </div>

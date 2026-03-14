@@ -20,7 +20,7 @@ export function CategoryShowcase() {
       <Container>
         <AnimatedSection className="mb-12 sm:mb-16">
           <p className="text-sm sm:text-base text-charcoal/50 uppercase tracking-[0.3em] font-body">
-            Essentials
+            Shop All
           </p>
         </AnimatedSection>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
@@ -32,26 +32,22 @@ export function CategoryShowcase() {
               >
                 <div className="overflow-hidden">
                   {CATEGORY_IMAGES[cat.slug] ? (
-                    <div className={`${HEIGHTS[i]} relative transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]`}>
+                    <div className={`${HEIGHTS[i]} relative transition-transform duration-[900ms] ease-out group-hover:scale-[1.04] bg-cream`}>
                       <img
                         src={CATEGORY_IMAGES[cat.slug]}
                         alt={cat.label}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className={`absolute inset-0 w-full h-full ${cat.slug === "bracelets" ? "object-contain" : "object-cover"}`}
                       />
                     </div>
                   ) : (
-                    <MediaSlot
-                      label={`${cat.label} — category image`}
-                      ratio=""
-                      className={`${HEIGHTS[i]} rounded-none transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]`}
-                    />
+                    <div className={`${HEIGHTS[i]} bg-cream transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]`} />
                   )}
                 </div>
                 <div className="mt-4">
                   <span className="font-display italic text-2xl sm:text-3xl lg:text-4xl text-charcoal/60 group-hover:text-charcoal/80 transition-colors duration-500 leading-none">
                     {cat.label}
                   </span>
-                  <p className="text-[10px] text-charcoal/30 mt-2 font-light tracking-wider">
+                  <p className="text-[12px] text-charcoal/30 mt-2 font-light tracking-wider">
                     {cat.description}
                   </p>
                 </div>

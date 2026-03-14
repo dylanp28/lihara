@@ -33,7 +33,7 @@ export default function ProductPage({ params }: PageProps) {
   return (
     <section className="py-12 sm:py-20">
       <Container>
-        <nav className="mb-10 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-charcoal/30">
+        <nav className="mb-10 flex items-center gap-2 text-[13px] uppercase tracking-[0.2em] text-charcoal/30">
           <Link href="/" className="hover:text-charcoal/60 transition-colors">Home</Link>
           <span>/</span>
           <Link href="/products" className="hover:text-charcoal/60 transition-colors">Shop</Link>

@@ -9,7 +9,7 @@ export default function ProductsPage() {
     <section className="py-12 sm:py-20">
       <Container>
         <div className="mb-14">
-          <span className="text-[11px] uppercase tracking-[0.35em] text-charcoal/30 font-body">
+          <span className="text-[13px] uppercase tracking-[0.35em] text-charcoal/30 font-body">
             All pieces
           </span>
           <h1 className="font-display text-4xl sm:text-5xl text-charcoal mt-4 leading-[1.05]">

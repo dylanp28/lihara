@@ -32,7 +32,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <h3 className="text-[13px] text-charcoal transition-colors duration-500 group-hover:text-charcoal/50">
               {product.name}
             </h3>
-            <p className="text-[10px] text-charcoal/25 mt-1 uppercase tracking-[0.2em]">
+            <p className="text-[12px] text-charcoal/25 mt-1 uppercase tracking-[0.2em]">
               {product.subtitle || product.category}
             </p>
           </div>

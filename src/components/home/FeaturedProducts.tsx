@@ -47,7 +47,7 @@ export function FeaturedProducts() {
                 <h3 className="font-display text-2xl sm:text-3xl text-charcoal transition-colors duration-500 group-hover:text-charcoal/60">
                   {hero.name}
                 </h3>
-                <p className="text-[11px] text-charcoal/30 mt-1.5 uppercase tracking-[0.2em]">
+                <p className="text-[13px] text-charcoal/30 mt-1.5 uppercase tracking-[0.2em]">
                   {hero.subtitle || hero.category}
                 </p>
               </div>
@@ -68,7 +68,7 @@ export function FeaturedProducts() {
                     <h3 className="text-sm text-charcoal transition-colors duration-500 group-hover:text-charcoal/60">
                       {product.name}
                     </h3>
-                    <p className="text-[10px] text-charcoal/25 mt-1 uppercase tracking-[0.2em]">
+                    <p className="text-[12px] text-charcoal/25 mt-1 uppercase tracking-[0.2em]">
                       {product.subtitle || product.category}
                     </p>
                   </div>
@@ -81,7 +81,7 @@ export function FeaturedProducts() {
         <AnimatedSection delay={0.3} className="mt-14">
           <Link
             href="/products"
-            className="group inline-flex items-center gap-3 text-charcoal/40 text-[11px] uppercase tracking-[0.2em] font-body hover:text-charcoal transition-colors duration-500"
+            className="group inline-flex items-center gap-3 text-charcoal/40 text-[13px] uppercase tracking-[0.2em] font-body hover:text-charcoal transition-colors duration-500"
           >
             <span>View all pieces</span>
             <svg

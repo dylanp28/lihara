@@ -44,7 +44,7 @@ export function MediaSlot({
             <circle cx="8.5" cy="8.5" r="1.5" strokeWidth="1" />
             <path d="M21 15l-5-5L5 21" strokeWidth="1" />
           </svg>
-          <span className="text-[9px] uppercase tracking-[0.2em] font-body text-center px-4">
+          <span className="text-[11px] uppercase tracking-[0.2em] font-body text-center px-4">
             {label}
           </span>
         </div>

@@ -13,6 +13,7 @@ export interface Product {
   images: ProductImage[];
   featured: boolean;
   line?: boolean;
+  latestDrop?: boolean;
   availability?: string;
 }
 

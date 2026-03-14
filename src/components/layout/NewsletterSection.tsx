@@ -46,7 +46,7 @@ export function NewsletterSection() {
                 </div>
                 <button
                   type="submit"
-                  className="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 hover:text-charcoal transition-colors duration-500 font-body pb-2.5 flex-shrink-0"
+                  className="text-[12px] uppercase tracking-[0.25em] text-charcoal/40 hover:text-charcoal transition-colors duration-500 font-body pb-2.5 flex-shrink-0"
                 >
                   Subscribe
                 </button>

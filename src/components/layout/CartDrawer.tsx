@@ -50,7 +50,7 @@ export function CartDrawer() {
                   <Link
                     href="/products"
                     onClick={closeCart}
-                    className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 hover:text-charcoal transition-colors"
+                    className="text-[13px] uppercase tracking-[0.2em] text-charcoal/50 hover:text-charcoal transition-colors"
                   >
                     Continue shopping
                   </Link>
@@ -86,7 +86,7 @@ export function CartDrawer() {
                             />
                             <button
                               onClick={() => removeItem(item.product.id, item.size)}
-                              className="text-[10px] uppercase tracking-wider text-charcoal/30 hover:text-charcoal transition-colors"
+                              className="text-[12px] uppercase tracking-wider text-charcoal/30 hover:text-charcoal transition-colors"
                             >
                               Remove
                             </button>
@@ -101,7 +101,7 @@ export function CartDrawer() {
 
             {state.items.length > 0 && (
               <div className="px-6 py-6 space-y-4">
-                <p className="text-[10px] text-center text-charcoal/30 uppercase tracking-wider">{shippingMessage}</p>
+                <p className="text-[12px] text-center text-charcoal/30 uppercase tracking-wider">{shippingMessage}</p>
                 <div className="flex justify-between text-sm">
                   <span className="text-charcoal/50">Subtotal</span>
                   <span>{formatPrice(subtotal)}</span>
@@ -109,7 +109,7 @@ export function CartDrawer() {
                 <Link
                   href="/cart"
                   onClick={closeCart}
-                  className="block w-full text-center bg-charcoal text-cream py-3.5 text-[11px] uppercase tracking-[0.15em] hover:bg-charcoal/85 transition-colors duration-300"
+                  className="block w-full text-center bg-charcoal text-cream py-3.5 text-[13px] uppercase tracking-[0.15em] hover:bg-charcoal/85 transition-colors duration-300"
                 >
                   View Cart
                 </Link>

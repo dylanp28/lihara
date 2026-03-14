@@ -16,7 +16,7 @@ export default function AboutPage() {
       <section className="bg-charcoal relative overflow-hidden py-28 sm:py-36">
         <Container>
           <div className="max-w-4xl">
-            <p className="text-cream/20 text-[10px] uppercase tracking-[0.5em] mb-8 font-body">
+            <p className="text-cream/20 text-[12px] uppercase tracking-[0.5em] mb-8 font-body">
               About
             </p>
             <h1 className="font-display text-display-lg text-cream leading-[1.05]">
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <AnimatedSection>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl">
               <div>
-                <span className="text-[10px] uppercase tracking-[0.35em] text-charcoal/25">Philosophy</span>
+                <span className="text-[12px] uppercase tracking-[0.35em] text-charcoal/25">Philosophy</span>
                 <h2 className="font-display text-3xl sm:text-4xl text-charcoal mt-4 leading-[1.1]">
                   Design Without
                   <br />
@@ -73,7 +73,7 @@ export default function AboutPage() {
       <section className="py-24 sm:py-32 bg-charcoal relative overflow-hidden">
         <Container>
           <AnimatedSection>
-            <span className="text-[10px] uppercase tracking-[0.35em] text-cream/20 font-body block mb-14">
+            <span className="text-[12px] uppercase tracking-[0.35em] text-cream/20 font-body block mb-14">
               Values
             </span>
           </AnimatedSection>
@@ -117,7 +117,7 @@ export default function AboutPage() {
         <Container>
           <AnimatedSection>
             <div className="text-center max-w-xl mx-auto">
-              <p className="text-[10px] uppercase tracking-[0.35em] text-charcoal/25 mb-6">
+              <p className="text-[12px] uppercase tracking-[0.35em] text-charcoal/25 mb-6">
                 Designed for the creative spirit
               </p>
               <p className="font-display italic text-3xl sm:text-4xl text-charcoal leading-[1.1] mb-10">
@@ -125,7 +125,7 @@ export default function AboutPage() {
               </p>
               <a
                 href="/products"
-                className="group inline-flex items-center gap-3 text-charcoal/40 text-[10px] uppercase tracking-[0.25em] font-body hover:text-charcoal transition-colors duration-500"
+                className="group inline-flex items-center gap-3 text-charcoal/40 text-[12px] uppercase tracking-[0.25em] font-body hover:text-charcoal transition-colors duration-500"
               >
                 <span>View the collection</span>
                 <svg

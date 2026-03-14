@@ -16,7 +16,7 @@ export default function ContactPage() {
     <section className="py-12 sm:py-16">
       <Container>
         <div className="mb-12">
-          <p className="text-[10px] uppercase tracking-[0.35em] text-charcoal/25 font-body mb-4">
+          <p className="text-[12px] uppercase tracking-[0.35em] text-charcoal/25 font-body mb-4">
             Contact
           </p>
           <h1 className="font-display text-4xl sm:text-5xl text-charcoal leading-[1.05]">

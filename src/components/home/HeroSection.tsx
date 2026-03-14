@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="lg:col-span-5 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-24 lg:py-0 order-2 lg:order-1">
           <div className="max-w-md">
             <motion.p
-              className="text-cream/25 text-[10px] uppercase tracking-[0.5em] font-body"
+              className="text-cream/25 text-[12px] uppercase tracking-[0.5em] font-body"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -58,7 +58,7 @@ export function HeroSection() {
             >
               <Link
                 href="/products"
-                className="group inline-flex items-center gap-3 text-cream/30 text-[10px] uppercase tracking-[0.25em] font-body hover:text-cream/60 transition-colors duration-500"
+                className="group inline-flex items-center gap-3 text-cream/30 text-[12px] uppercase tracking-[0.25em] font-body hover:text-cream/60 transition-colors duration-500"
               >
                 <span>Explore the collection</span>
                 <svg

@@ -28,7 +28,7 @@ export function CartSummary() {
         </div>
 
         {!freeShipping && (
-          <p className="text-[10px] text-charcoal/30 uppercase tracking-wider">
+          <p className="text-[12px] text-charcoal/30 uppercase tracking-wider">
             {formatPrice(FREE_SHIPPING_THRESHOLD - subtotal)} away from free shipping
           </p>
         )}
@@ -43,7 +43,7 @@ export function CartSummary() {
         Checkout — Coming Soon
       </Button>
 
-      <p className="text-[10px] text-center text-charcoal/25 tracking-wider">
+      <p className="text-[12px] text-center text-charcoal/25 tracking-wider">
         Taxes calculated at checkout
       </p>
     </div>

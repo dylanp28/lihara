@@ -39,10 +39,10 @@ export function Header() {
                 </svg>
               </button>
               <nav className="hidden lg:flex items-center gap-8">
-                <Link href="/products" className="text-[11px] uppercase tracking-[0.2em] text-charcoal/40 hover:text-charcoal transition-colors duration-500">
+                <Link href="/products" className="text-[13px] uppercase tracking-[0.2em] text-charcoal/40 hover:text-charcoal transition-colors duration-500">
                   Shop
                 </Link>
-                <Link href="/about" className="text-[11px] uppercase tracking-[0.2em] text-charcoal/40 hover:text-charcoal transition-colors duration-500">
+                <Link href="/about" className="text-[13px] uppercase tracking-[0.2em] text-charcoal/40 hover:text-charcoal transition-colors duration-500">
                   About
                 </Link>
               </nav>

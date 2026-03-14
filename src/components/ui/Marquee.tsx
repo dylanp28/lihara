@@ -28,7 +28,7 @@ export function Marquee() {
 
   return (
     <div className="bg-charcoal py-4 overflow-hidden select-none">
-      <div className="flex animate-marquee gap-8 text-cream/20 text-[10px] uppercase tracking-[0.4em] font-body">
+      <div className="flex animate-marquee gap-8 text-cream/20 text-[12px] uppercase tracking-[0.4em] font-body">
         {content}
         {content}
       </div>
