@@ -77,23 +77,6 @@ export function FeaturedProducts() {
             ))}
           </div>
         </div>
-
-        <AnimatedSection delay={0.3} className="mt-14">
-          <Link
-            href="/products"
-            className="group inline-flex items-center gap-3 text-charcoal/40 text-[13px] uppercase tracking-[0.2em] font-body hover:text-charcoal transition-colors duration-500"
-          >
-            <span>View all pieces</span>
-            <svg
-              className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </AnimatedSection>
       </Container>
     </section>
   );
