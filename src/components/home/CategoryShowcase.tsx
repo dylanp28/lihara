@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { MediaSlot } from "@/components/ui/MediaSlot";
 import { CATEGORIES, CATEGORY_IMAGES } from "@/lib/constants";
 
 const HEIGHTS = [

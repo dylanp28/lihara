@@ -37,7 +37,7 @@ export function BrandStory() {
               that once came without hesitation, bold, unfiltered, maybe a
               little crazy, got traded for safe choices and quiet conformity.
               LIHARA exists to reignite that spark. To remind you that the kid
-              who drew outside the lines didn't disappear.
+              who drew outside the lines didn&apos;t disappear.
             </p>
 
             <p className="text-cream/35 font-light leading-[1.9] text-[15px] sm:text-[16px] mt-6">
