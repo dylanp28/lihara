@@ -49,4 +49,5 @@ export const CATEGORY_GRADIENTS: Record<string, string> = {
 
 export const CATEGORY_IMAGES: Record<string, string> = {
   bracelets: "/images/products/bracelets-category.png",
+  necklaces: "/images/products/necklaces-category.png",
 };

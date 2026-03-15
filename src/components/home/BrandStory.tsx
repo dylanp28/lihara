@@ -2,7 +2,6 @@
 
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { MediaSlot } from "@/components/ui/MediaSlot";
 import Link from "next/link";
 
 export function BrandStory() {
@@ -49,7 +48,7 @@ export function BrandStory() {
               &ldquo;The problem is how to remain one once we grow up.&rdquo;
             </p>
             <p className="text-cream/25 text-[13px] mt-3 tracking-wide">
-              &mdash; Pablo Picasso
+              &mdash; Picasso
             </p>
 
             <Link
@@ -67,42 +66,6 @@ export function BrandStory() {
               </svg>
             </Link>
           </AnimatedSection>
-        </div>
-
-        {/* Values strip with media slots */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-24 sm:mt-32">
-          {[
-            {
-              title: "Design-Led",
-              desc: "Every piece starts as a sketch, iterated until only the essential form remains.",
-              media: "Sketching or design process — 600×400",
-            },
-            {
-              title: "Premium Steel",
-              desc: "316L surgical-grade stainless steel. Won\u2019t tarnish, fade, or irritate.",
-              media: "Material close-up or texture — 600×400",
-            },
-            {
-              title: "$35\u2013$70",
-              desc: "Thoughtful design shouldn\u2019t require a luxury budget.",
-              media: "Styled product shot — 600×400",
-            },
-          ].map((item, i) => (
-            <AnimatedSection key={item.title} delay={0.2 + i * 0.1}>
-              <MediaSlot
-                label={item.media}
-                ratio="aspect-[3/2]"
-                dark
-                className="w-full"
-              />
-              <h4 className="text-cream/50 font-display italic text-lg mt-5 mb-2">
-                {item.title}
-              </h4>
-              <p className="text-cream/25 text-[14px] font-light leading-[1.8]">
-                {item.desc}
-              </p>
-            </AnimatedSection>
-          ))}
         </div>
       </Container>
     </section>

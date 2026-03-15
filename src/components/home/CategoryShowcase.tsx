@@ -35,7 +35,7 @@ export function CategoryShowcase() {
                       <img
                         src={CATEGORY_IMAGES[cat.slug]}
                         alt={cat.label}
-                        className={`absolute inset-0 w-full h-full ${cat.slug === "bracelets" ? "object-contain" : "object-cover"}`}
+                        className={`absolute inset-0 w-full h-full ${cat.slug === "bracelets" ? "object-contain" : cat.slug === "necklaces" ? "object-cover object-top" : "object-cover"}`}
                       />
                     </div>
                   ) : (
