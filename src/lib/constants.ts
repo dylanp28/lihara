@@ -19,15 +19,15 @@ export const FOOTER_NAV = {
     { label: "Earrings", href: "/products?category=earrings" },
   ],
   help: [
-    { label: "Size Guide", href: "/size-guide" },
+    { label: "FAQ", href: "/faq" },
     { label: "Shipping & Returns", href: "/shipping" },
+    { label: "Size Guide", href: "/size-guide" },
     { label: "Care Instructions", href: "/care" },
     { label: "Contact Us", href: "/contact" },
   ],
   about: [
     { label: "Our Story", href: "/about" },
-    { label: "Materials", href: "/about#materials" },
-    { label: "Sustainability", href: "/about#sustainability" },
+    { label: "FAQ", href: "/faq" },
   ],
 } as const;
 
